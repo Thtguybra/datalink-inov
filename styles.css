@@ -1,26 +1,25 @@
-/* General Section Styling */
-section {
-    padding: 50px 20px;
-    text-align: center;
-    margin: 20px auto;
-}
-
-/* Home Section */
-#home {
-    background-color: #f4f4f9;
-}
-
 /* Services Section */
 #services {
+    padding: 50px;
     background-color: #e0f7fa;
 }
 
-/* About Us Section */
-#about {
-    background-color: #ffecb3;
+.service {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
 }
 
-/* Contact Section */
-#contact {
-    background-color: #e1bee7;
+.service h3 {
+    flex: 1;
+    font-size: 24px;
+    color: #0066cc;
+    margin: 0;
+}
+
+.service p {
+    flex: 2;
+    font-size: 16px;
+    color: #333;
+    margin-left: 20px;
 }
