@@ -1,27 +1,26 @@
-/* Navigation Bar */
-nav {
-    background-color: #0066cc;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+/* General Section Styling */
+section {
+    padding: 50px 20px;
     text-align: center;
+    margin: 20px auto;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+/* Home Section */
+#home {
+    background-color: #f4f4f9;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+/* Services Section */
+#services {
+    background-color: #e0f7fa;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+/* About Us Section */
+#about {
+    background-color: #ffecb3;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #e1bee7;
 }
