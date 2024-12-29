@@ -3,39 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services - Data Link Inov</title>
-    <!-- Link to external CSS -->
+    <title>Services - Data Link Inov</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Custom styling for the Services page */
+        body {
+            background-color: #f4f8fc; /* Light blue-gray background */
+            color: #333; /* Dark text color */
+        }
+        h1 {
+            color: #1e88e5; /* Bright blue heading */
+            text-align: center;
+        }
+        .services-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .service {
+            margin-bottom: 20px;
+        }
+        .service h2 {
+            color: #1565c0;
+            font-size: 24px;
+        }
+        .service p {
+            line-height: 1.6;
+        }
+        .service a {
+            color: #1e88e5;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .service a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="services.html" class="active">Services</a></li>
-            <li><a href="index.html#about">About Us</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
+            <li class="dropdown">
+                <a href="services.html" class="active">Services</a>
+                <ul class="dropdown-menu">
+                    <li><a href="ai-integration.html">AI Integration</a></li>
+                    <li><a href="networking-integration.html">Networking Integration</a></li>
+                    <li><a href="online-platform-development.html">Online Platform Development</a></li>
+                    <li><a href="performance-and-strategy-consulting.html">Performance and Strategy Consulting</a></li>
+                </ul>
+            </li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
         </ul>
     </nav>
 
-    <!-- Services Page Content -->
-    <section id="services">
-        <h2>Our Services</h2>
+    <!-- Services Section -->
+    <section class="services-container">
+        <h1>Our Services</h1>
+
         <div class="service">
-            <h3>AI Integration</h3>
-            <p>We help businesses leverage AI technologies to optimize operations, automate workflows, and unlock growth potential.</p>
+            <h2><a href="ai-integration.html">AI Integration</a></h2>
+            <p>Leverage the power of artificial intelligence to optimize processes, gain insights, and enhance decision-making.</p>
         </div>
+
         <div class="service">
-            <h3>Networking Integration</h3>
-            <p>We design and implement robust and secure networks tailored to your business needs, ensuring seamless connectivity.</p>
+            <h2><a href="networking-integration.html">Networking Integration</a></h2>
+            <p>Build secure, scalable, and efficient networks to connect your team and improve collaboration.</p>
         </div>
+
         <div class="service">
-            <h3>Website Building</h3>
-            <p>Our team builds visually appealing and functional websites optimized for performance and user experience.</p>
+            <h2><a href="online-platform-development.html">Online Platform Development</a></h2>
+            <p>Create modern, responsive platforms tailored to your business needs, from e-commerce to custom portals.</p>
         </div>
+
         <div class="service">
-            <h3>Business Strategy</h3>
-            <p>We provide actionable strategies to help your business thrive in today’s competitive market by leveraging technology.</p>
+            <h2><a href="performance-and-strategy-consulting.html">Performance and Strategy Consulting</a></h2>
+            <p>Develop actionable strategies to optimize operations, enhance performance, and drive business growth.</p>
         </div>
     </section>
 </body>
