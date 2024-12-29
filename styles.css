@@ -59,8 +59,11 @@ nav ul li a:hover {
     z-index: 1000;
 }
 
-.dropdown-menu li {
+.dropdown:hover .dropdown-menu {
     display: block;
+}
+
+.dropdown-menu li {
     text-align: left;
 }
 
@@ -105,16 +108,33 @@ section {
     color: #ffffff; /* White text */
 }
 
-#contact {
+#contact, #pricing {
     background-color: #1e88e5; /* Blue background */
     color: #ffffff; /* White text */
 }
 
-#contact a {
+#contact a, #pricing a {
     color: #90caf9; /* Lighter blue for links */
     text-decoration: none;
 }
 
-#contact a:hover {
+#contact a:hover, #pricing a:hover {
     text-decoration: underline;
+}
+
+/* Pricing Section (Optional) */
+#pricing {
+    background-color: #e3f2fd; /* Light blue background */
+    color: #333; /* Dark text for contrast */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#pricing h2 {
+    color: #1e88e5; /* Bold blue for headings */
+}
+
+#pricing p {
+    line-height: 1.6;
+    margin: 20px auto;
 }
