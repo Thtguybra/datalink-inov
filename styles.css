@@ -2,11 +2,13 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark gray background for modern tech look */
+    color: #e0e0e0; /* Light gray text for contrast */
 }
 
 /* Navigation Bar */
 nav {
-    background-color: #0066cc;
+    background-color: #1e88e5; /* Bold blue */
     padding: 10px 0;
     position: sticky;
     top: 0;
@@ -34,15 +36,20 @@ nav ul li a {
     display: inline-block;
 }
 
-nav ul li:hover > a {
-    background-color: #005bb5;
+nav ul li a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+nav ul li a:hover {
+    background-color: #1565c0; /* Slightly darker blue for hover */
 }
 
 /* Dropdown Menu */
 .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #0066cc;
+    background-color: #1e88e5;
     list-style-type: none;
     padding: 10px 0;
     margin: 0;
@@ -66,12 +73,7 @@ nav ul li:hover > a {
 }
 
 .dropdown-menu li a:hover {
-    background-color: #005bb5;
-}
-
-/* Show dropdown on hover */
-.dropdown:hover .dropdown-menu {
-    display: block;
+    background-color: #1565c0;
 }
 
 /* Logo Section */
@@ -81,13 +83,13 @@ nav ul li:hover > a {
 }
 
 .logo h1 {
-    font-size: 36px;
-    color: #333;
+    font-size: 48px;
+    color: #1e88e5; /* Bright blue for company name */
 }
 
 .logo p {
     font-size: 18px;
-    color: #666;
+    color: #90caf9; /* Lighter blue for tagline */
     margin-top: 10px;
 }
 
@@ -99,17 +101,17 @@ section {
 }
 
 #about {
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #424242; /* Medium gray for contrast */
+    color: #ffffff; /* White text */
 }
 
 #contact {
-    background-color: #e1bee7;
-    color: #333;
+    background-color: #1e88e5; /* Blue background */
+    color: #ffffff; /* White text */
 }
 
 #contact a {
-    color: #0066cc;
+    color: #90caf9; /* Lighter blue for links */
     text-decoration: none;
 }
 
